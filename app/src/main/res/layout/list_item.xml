@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/main_container">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        tools:src="@drawable/dws_icon"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/img"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/item_text_name"
+                tools:text="公司名称:" />
+
+            <TextView
+                android:id="@+id/item_name_text"
+                style="@style/item_text_nameTitle"
+                tools:text="湖南科创" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/addr_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/item_addr"
+                style="@style/item_text_name"
+                tools:text="公司地址:" />
+
+            <TextView
+                android:id="@+id/item_addr_text"
+                style="@style/item_text"
+                tools:text="青山路" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/openTime_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_openTime"
+                style="@style/item_text_name"
+                tools:text="营业时间:" />
+
+            <TextView
+                android:id="@+id/item_openTime_text"
+                style="@style/item_text"
+                tools:text="上午9点--下午6点" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_tel"
+                style="@style/item_text_name"
+                tools:text="联系电话:" />
+
+            <TextView
+                android:id="@+id/item_tel_text"
+                style="@style/item_text"
+                tools:text="18888888888" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

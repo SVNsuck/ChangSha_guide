@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ChangSha_guide</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_restaurant">餐馆</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_hotel">酒店</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_attractions">景点</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_company">公司</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
