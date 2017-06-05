@@ -11,8 +11,20 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class GuideInfoFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 4;
+    public static final String 公司 = "公司";
+    public static final String 景点 = "景点";
+    public static final String 酒店 = "酒店";
+    public static final String 餐馆 = "餐馆";
     private Context mContext;
+    private Fragment[] pages = new Fragment[]{
+            new RestaurantFragment(),
+            new HotelFragment(),
+            new AttractionsFragment(),
+            new CompanyFragment()
+    };
+    private String[] titles = new String[]{
+            餐馆, 酒店, 景点, 公司
+    };
 
     public GuideInfoFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -21,32 +33,16 @@ public class GuideInfoFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new RestaurantFragment();
-        } else if (position == 1) {
-            return new HotelFragment();
-        } else if (position == 2) {
-            return new AttractionsFragment();
-        } else {
-            return new CompanyFragment();
-        }
+        return pages[position];
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0) {
-            return mContext.getString(R.string.category_restaurant);
-        } else if (position == 1) {
-            return mContext.getString(R.string.category_hotel);
-        } else if (position == 2) {
-            return mContext.getString(R.string.category_attractions);
-        } else {
-            return mContext.getString(R.string.category_company);
-        }
+        return titles[position];
     }
 
     @Override
     public int getCount() {
-        return PAGE_COUNT;
+        return pages.length;
     }
 }

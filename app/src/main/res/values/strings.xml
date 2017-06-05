@@ -14,4 +14,29 @@
     <string name="category_company">公司</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rest_xhl_name">西湖楼酒家</string>
+    <string name="res_xhl_phoneNum">(0731)84258180</string>
+    <string name="rest_xhl_openTime">9:00-21:00</string>
+    <string name="rest_llx_name">老长沙龙虾馆</string>
+    <string name="rest_llx_phoneNum">(0731)84258186</string>
+    <string name="rest_llx_openTime">17:00-3:00</string>
+    <string name="rest_xhl_addr">长沙市开福区马栏山西湖楼酒家(省广电中心斜对面)</string>
+    <string name="rest_llx_addr">湘江中路2段72号</string>
+    <string name="rest_qhsf_openTime">11:00-21:00</string>
+    <string name="rest_qhsf_phoneNum">4007508999</string>
+    <string name="rest_qhsf_name">秦皇食府(市政府店)</string>
+    <string name="rest_qhsf_addr">岳麓大道158号</string>
+    <string name="rest_yld_addr">五一大道125号铁建精品酒店东隔壁</string>
+    <string name="rest_ydl_name">玉楼东(五一路店)</string>
+    <string name="rest_ydl_phoneNum">(0731)82777988</string>
+    <string name="rest_ydl_openTime">11:00-2:00</string>
+    <string name="rest_xjhx_openTime">11:30-23:00</string>
+    <string name="rest_xjhx_phoneNum">(0731)84467299</string>
+    <string name="rest_xjhx_name">徐记海鲜(湘江店)</string>
+    <string name="rest_xjhx_addr">开福区湘江中路二段208号欧陆经典1楼</string>
+    <string name="rest_whdt_addr">长沙市天心区坡子街148号</string>
+    <string name="rest_whdt_name">伍厚德堂</string>
+    <string name="rest_whdt_phoneNum">(0731)85120688</string>
+    <string name="rest_whdt_openTime">11:30-21:00</string>
+    <string name="aaa">(0731)84258180</string>
 </resources>

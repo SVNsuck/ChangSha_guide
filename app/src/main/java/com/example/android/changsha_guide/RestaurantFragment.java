@@ -29,12 +29,12 @@ public class RestaurantFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.guide_list, container, false);
 
         final List<GuideInfo> guideInfos = new ArrayList<>();
-        guideInfos.add(new GuideInfo("9:00-21:00","(0731)84258180","西湖楼酒家","长沙市开福区马栏山西湖楼酒家(省广电中心斜对面)"));
-        guideInfos.add(new GuideInfo("17:00-3:00","(0731)84258186","老长沙龙虾馆","湘江中路2段72号"));
-        guideInfos.add(new GuideInfo("11:00-21:00","4007508999","秦皇食府(市政府店)","岳麓大道158号"));
-        guideInfos.add(new GuideInfo("11:00-2:00","(0731)82777988","玉楼东(五一路店)","五一大道125号铁建精品酒店东隔壁"));
-        guideInfos.add(new GuideInfo("11:30-23:00","(0731)84467299","徐记海鲜(湘江店)","开福区湘江中路二段208号欧陆经典1楼"));
-        guideInfos.add(new GuideInfo("11:30-21:00","(0731)85120688","伍厚德堂","长沙市天心区坡子街148号"));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_xhl_openTime),getString(R.string.res_xhl_phoneNum),getString(R.string.rest_xhl_name),getString(R.string.rest_xhl_addr)));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_llx_openTime),getString(R.string.rest_llx_phoneNum),getString(R.string.rest_llx_name),getString(R.string.rest_llx_addr)));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_qhsf_openTime),getString(R.string.rest_qhsf_phoneNum),getString(R.string.rest_qhsf_name),getString(R.string.rest_qhsf_addr)));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_ydl_openTime),getString(R.string.rest_ydl_phoneNum),getString(R.string.rest_ydl_name),getString(R.string.rest_yld_addr)));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_xjhx_openTime),getString(R.string.rest_xjhx_phoneNum),getString(R.string.rest_xjhx_name),getString(R.string.rest_xjhx_addr)));
+        guideInfos.add(new GuideInfo(getString(R.string.rest_whdt_openTime),getString(R.string.rest_whdt_phoneNum),getString(R.string.rest_whdt_name),getString(R.string.rest_whdt_addr)));
 
         //初始化GuideAdapter
         GuideInfoAdapter guideInfoAdapter = new GuideInfoAdapter(getActivity(),guideInfos,R.color.category_restaurant,1);

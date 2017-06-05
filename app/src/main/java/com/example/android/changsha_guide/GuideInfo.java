@@ -5,6 +5,12 @@ package com.example.android.changsha_guide;
  */
 
 public class GuideInfo {
+    public static final String M_ADRESS = ", mAdress='";
+    public static final String M_NAME = ", mName='";
+    public static final String M_IMAGE_ID = ", mImageId='";
+    public static final String M_PHONE_NUMBER = ", mPhoneNumber='";
+    public static final String M_BUSINESS_HOUR = "mBusinessHour='";
+    public static final String GUIDE_INFO = "GuideInfo{";
     private String mBusinessHour;//营业时间
 
     private String mPhoneNumber;//联系电话
@@ -81,12 +87,12 @@ public class GuideInfo {
 
     @Override
     public String toString() {
-        return "GuideInfo{" +
-                "mBusinessHour='" + mBusinessHour + '\'' +
-                ", mPhoneNumber='" + mPhoneNumber + '\'' +
-                ", mImageId='" + mImageResuourceId + '\'' +
-                ", mName='" + mName + '\'' +
-                ", mAdress='" + mAdress + '\'' +
+        return GUIDE_INFO +
+                M_BUSINESS_HOUR + mBusinessHour + '\'' +
+                M_PHONE_NUMBER + mPhoneNumber + '\'' +
+                M_IMAGE_ID + mImageResuourceId + '\'' +
+                M_NAME + mName + '\'' +
+                M_ADRESS + mAdress + '\'' +
                 '}';
     }
 }
